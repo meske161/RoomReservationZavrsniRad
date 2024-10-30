@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bands - Room Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bandsPage">
+    <header>
+        <h1>Bands</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="users.html">Users</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="reservations.html">Reservations</a>
+    </nav>
+    <main>
+        <h2>Band List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="bandsTableBody">
+                <!-- Bands will be loaded here -->
+            </tbody>
+        </table>
+        <h2>Add/Edit Band</h2>
+        <form id="bandForm">
+            <input type="hidden" id="bandId">
+            <label for="bandName">Name:</label>
+            <input type="text" id="bandName" required>
+            <button type="submit">Save</button>
+            <button type="button" id="cancelBandEdit">Cancel</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 Room Reservation System
+    </footer>
+    <!-- Include jQuery before script.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

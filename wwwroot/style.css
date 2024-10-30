@@ -1,0 +1,115 @@
+﻿/* style.css */
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8B4513; /* Brown background */
+    color: #FFFFFF; /* White text for contrast */
+}
+
+/* Header */
+header {
+    background-color: #5A2D0C; /* Darker shade of brown */
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #A0522D; /* Complementary color */
+    overflow: hidden;
+}
+
+    nav a {
+        float: left;
+        display: block;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        nav a:hover {
+            background-color: #7F3D0A; /* Slightly darker on hover */
+        }
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Forms */
+form {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    color: #000000; /* Black text inside forms */
+}
+
+    form label {
+        display: block;
+        margin-top: 10px;
+    }
+
+    form input, form select, form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+/* Buttons */
+button {
+    background-color: #5A2D0C;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #7F3D0A;
+    }
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    table th {
+        background-color: #A0522D;
+        color: #FFFFFF;
+    }
+
+/* Links */
+a {
+    color: #FFD700; /* Gold color for links */
+}
+
+    a:hover {
+        color: #FFA500; /* Orange on hover */
+    }
+
+/* Footer */
+footer {
+    background-color: #5A2D0C;
+    padding: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

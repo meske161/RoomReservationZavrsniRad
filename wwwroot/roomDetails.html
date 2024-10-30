@@ -1,0 +1,42 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Details - Room Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="roomDetailsPage">
+    <header>
+        <h1 id="roomName">Room Details</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="users.html">Users</a>
+        <a href="bands.html">Bands</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="reservations.html">Reservations</a>
+    </nav>
+    <main>
+        <p id="roomDescription"></p>
+        <h2>Existing Reservations</h2>
+        <ul id="reservationsList">
+            <!-- Reservations will be loaded here -->
+        </ul>
+        <h2>Make a Reservation</h2>
+        <form id="reservationForm">
+            <label for="bandId">Your Band ID:</label>
+            <input type="number" id="bandId" required>
+            <label for="startTime">Start Time:</label>
+            <input type="datetime-local" id="startTime" required>
+            <label for="endTime">End Time:</label>
+            <input type="datetime-local" id="endTime" required>
+            <button type="submit">Reserve</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 Room Reservation System
+    </footer>
+    <!-- Include jQuery before script.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

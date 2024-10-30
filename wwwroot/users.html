@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users - Room Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="usersPage">
+    <header>
+        <h1>Users</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="bands.html">Bands</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="reservations.html">Reservations</a>
+    </nav>
+    <main>
+        <h2>User List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Band</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="usersTableBody">
+                <!-- Users will be loaded here -->
+            </tbody>
+        </table>
+        <h2>Add/Edit User</h2>
+        <form id="userForm">
+            <input type="hidden" id="userId">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            <label for="bandId">Band:</label>
+            <select id="bandId">
+                <!-- Bands will be loaded here -->
+            </select>
+            <button type="submit">Save</button>
+            <button type="button" id="cancelUserEdit">Cancel</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 Room Reservation System
+    </footer>
+    <!-- Include jQuery before script.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
